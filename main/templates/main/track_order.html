@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Track Your Order</h1>
+
+<div class="order-details">
+    <p><strong>Order ID:</strong> {{ order.id }}</p>
+    <p><strong>Status:</strong> {{ order.status }}</p>
+    <p><strong>Location:</strong> {{ order.location }}</p>
+    <p><strong>Estimated Delivery Time:</strong> {{ order.estimated_delivery_time }}</p>
+    <p><strong>Total:</strong> {{ order.total }} TND</p>
+</div>
+
+<a href="{% url 'home' %}" class="btn btn-primary">Back to Home</a>
+{% endblock %}

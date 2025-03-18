@@ -1,0 +1,114 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Home - RMC{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="jumbotron jumbotron-fluid text-center bg-dark text-white py-5">
+    <div class="container">
+        <h1 class="display-4">Welcome to RMC</h1>
+        <p class="lead">Your trusted partner for quality products and services.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'all_products' %}" role="button">Explore Products</a>
+    </div>
+</div>
+
+<!-- About Us Section -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About Us</h2>
+            <p class="lead">
+                At RMC, we are dedicated to providing high-quality products and exceptional customer service. 
+                Our mission is to make your life easier by offering innovative solutions tailored to your needs.
+            </p>
+            <a href="{% url 'about' %}" class="btn btn-outline-primary">Learn More</a>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/about-us.jpg' %}" class="img-fluid rounded" alt="About Us">
+        </div>
+    </div>
+</div>
+
+<!-- Featured Products Section -->
+<div class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/product1.jpg' %}" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">High-quality product designed for your needs.</p>
+                        <a href="{% url 'all_products' %}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/product2.jpg' %}" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Affordable and reliable solutions for everyday use.</p>
+                        <a href="{% url 'all_products' %}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/product3.jpg' %}" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">Innovative designs that stand out from the crowd.</p>
+                        <a href="{% url 'all_products' %}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">What Our Customers Say</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img src="{% static 'images/customer1.jpg' %}" class="rounded-circle mb-3" alt="Customer 1" width="100">
+                    <h5 class="card-title">John Doe</h5>
+                    <p class="card-text">"RMC has the best products and customer service. Highly recommended!"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img src="{% static 'images/customer2.jpg' %}" class="rounded-circle mb-3" alt="Customer 2" width="100">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">"I love the quality and affordability of RMC products. Great experience!"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img src="{% static 'images/customer3.jpg' %}" class="rounded-circle mb-3" alt="Customer 3" width="100">
+                    <h5 class="card-title">Mike Johnson</h5>
+                    <p class="card-text">"RMC exceeded my expectations. Will definitely shop here again!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action Section -->
+<div class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h2 class="display-4">Ready to Get Started?</h2>
+        <p class="lead">Explore our wide range of products and discover the perfect solution for your needs.</p>
+        <a href="{% url 'all_products' %}" class="btn btn-light btn-lg">Shop Now</a>
+    </div>
+</div>
+{% endblock %}

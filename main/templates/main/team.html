@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Our Team - RMC{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Our Team</h1>
+<div class="row">
+    {% for member in team %}
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{% static 'main/images/placeholder.png' %}" class="card-img-top" alt="{{ member.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ member.name }}</h5>
+                <p class="card-text">{{ member.position }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Order Management</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>User</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Location</th>
+            <th>Estimated Delivery</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for order in orders %}
+        <tr>
+            <td>{{ order.id }}</td>
+            <td>{{ order.user.username }}</td>
+            <td>{{ order.total }} TND</td>
+            <td>{{ order.status }}</td>
+            <td>{{ order.location }}</td>
+            <td>{{ order.estimated_delivery_time }}</td>
+            <td>
+                <a href="{% url 'update_order_status' order.id %}" class="btn btn-warning">Update Status</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

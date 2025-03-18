@@ -1,0 +1,322 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark grey text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333; /* Dark grey navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff; /* White text */
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+    color: #fff !important; /* White text */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff6f61 !important; /* Coral accent color */
+}
+
+.dropdown-menu {
+    background-color: #444; /* Dark grey dropdown */
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #fff; /* White text */
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #ff6f61; /* Coral accent color */
+    color: #fff !important;
+}
+
+/* Search Bar Styles */
+.form-control {
+    border-radius: 25px;
+    border: 1px solid #ccc; /* Light grey border */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark grey text */
+}
+
+.btn-outline-success {
+    border-radius: 25px;
+    border-color: #ff6f61; /* Coral accent color */
+    color: #ff6f61; /* Coral accent color */
+    transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #ff6f61; /* Coral accent color */
+    color: #fff; /* White text */
+}
+
+/* Cart Icon Styles */
+#cart-count {
+    background-color: #ff6f61; /* Coral accent color */
+    color: #fff; /* White text */
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+/* Main Content Styles */
+.container.my-5 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark grey footer */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button Styles */
+.btn-custom {
+    background-color: #ff6f61; /* Coral accent color */
+    color: #fff; /* White text */
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #e65a50; /* Darker coral accent color */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #fff; /* White background */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #333; /* Dark grey text */
+}
+
+.card-text {
+    color: #666; /* Medium grey text */
+}
+
+/* Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background */
+}
+
+.modal-header {
+    border-bottom: none;
+    background-color: #333; /* Dark grey header */
+    color: #fff; /* White text */
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-footer {
+    border-top: none;
+    background-color: #f5f5f5; /* Light grey footer */
+    border-radius: 0 0 10px 10px;
+}
+
+/* Carousel Styles */
+.carousel-item {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .carousel-item {
+        height: 300px;
+    }
+}
+
+/* Additional Styles for Grey-Scale Design */
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Dark grey text */
+}
+
+/* Links */
+a {
+    color: #ff6f61; /* Coral accent color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e65a50; /* Darker coral accent color */
+}
+
+/* Forms */
+.form-control {
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light grey border */
+    color: #333; /* Dark grey text */
+}
+
+.form-control:focus {
+    border-color: #ff6f61; /* Coral accent color */
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.5); /* Coral accent color */
+}
+
+/* Tables */
+.table {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark grey text */
+}
+
+.table th {
+    background-color: #333; /* Dark grey header */
+    color: #fff; /* White text */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f5f5f5; /* Light grey striped rows */
+}
+
+/* Alerts */
+.alert {
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+}
+
+.alert-danger {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #ff6f61; /* Coral accent color */
+    border-color: #ff6f61; /* Coral accent color */
+    color: #fff; /* White text */
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e65a50; /* Darker coral accent color */
+    border-color: #e65a50; /* Darker coral accent color */
+}
+
+.btn-secondary {
+    background-color: #666; /* Medium grey background */
+    border-color: #666; /* Medium grey border */
+    color: #fff; /* White text */
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #555; /* Darker grey background */
+    border-color: #555; /* Darker grey border */
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+}
+
+.page-item.active .page-link {
+    background-color: #ff6f61; /* Coral accent color */
+    border-color: #ff6f61; /* Coral accent color */
+    color: #fff; /* White text */
+}
+
+.page-link {
+    color: #333; /* Dark grey text */
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    color: #ff6f61; /* Coral accent color */
+}
+
+/* Additional Custom Styles */
+/* Add more styles here as needed */
